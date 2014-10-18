@@ -1,0 +1,12 @@
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'search-all-keybindings'
+      'submenu': [
+        { 'label': 'Open', 'command': 'search-all-keybindings:open' }
+      ]
+    ]
+  }
+]

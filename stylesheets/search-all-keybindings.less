@@ -1,0 +1,50 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+ 
+.search-all-keybindings {
+  font-size:   14px;
+  overflow: auto;
+  h3 {
+    font-weight: bold;
+    margin:      15px;
+  }
+  input {
+    display:     none;
+    width:      400px;
+    margin:      15px;
+    border:        1px solid @input-border-color;
+    color:          @text-color;
+    background-color: @input-background-color;
+    
+  }
+  table {
+    margin-left:15px;
+    display: none;
+    tr {
+      border-top: 1px solid gray;
+      td {
+        padding: 2px 15px 2px 15px;
+      }
+      .td-key {
+        white-space: nowrap;
+      }
+      .td-cnt {
+        text-align: right;
+      }
+      .td-nam {
+      }
+      .td-cmd {
+      }
+      .td-scp {
+      }
+    }
+  }
+  .none-found {
+    margin-left:15px;
+    display: none;
+  }
+}
+        
