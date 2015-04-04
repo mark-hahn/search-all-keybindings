@@ -18,7 +18,7 @@ A list of matching key bindings will be shown.  The rows are ordered with the mo
 - Number of downloads of the package
 - The command, e.g. `find-and-replace:open`
 - The keypress, e.g `ctrl-F`
-- The scope for the binding, e.g `.worspace .editor`
+- The scope for the binding, e.g `.workspace .editor`
   
 ## License
 
