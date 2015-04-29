@@ -1,8 +1,10 @@
 
 # lib/search-all-kb-page-view
 
-{$, View} = require 'atom'
-moment    = require 'moment'
+{$}     = require 'space-pen'
+{View}  = require 'atom-space-pen-views'
+subAtom = require 'sub-atom'
+moment  = require 'moment'
 
 module.exports =
 class SearchAllKbPageView extends View
@@ -18,6 +20,8 @@ class SearchAllKbPageView extends View
       @div outlet:'noneFound', class:'none-found', 'No Bindings Found'
       
   initialize: (searchAllKbPage) ->
+    @subs = new subAtom
+    
     do waitForBindings = =>
       main = searchAllKbPage.getMain()
       if not main.bindings
@@ -32,7 +36,7 @@ class SearchAllKbPageView extends View
       @heading.css fontWeight: 'normal'
       @srchStr.show().focus()
       
-      @subscribe @srchStr, 'keydown', (e) =>
+      @subs.add @srchStr, 'keydown', (e) =>
         if e.which is 13 then @display(); return false
       
   normalize: (str) ->
@@ -72,6 +76,6 @@ class SearchAllKbPageView extends View
     console.log 'destroying SearchAllKbPageView'
     if @waitTimeout then clearTimeout @waitTimeout
     @detach()
-    @unsubscribe()
+    @subs.dispose()
     
     
