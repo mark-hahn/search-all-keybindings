@@ -12,9 +12,9 @@ exports.getBindings = (cb) ->
   
   request options, (err, res, body) ->
     if err or not (status = res?.statusCode) or status isnt 200
-      console.log 'search-all-keybindings, error getting db from gist', status, err?.statusMessage, body
+      # console.log 'search-all-keybindings, error getting db from gist', status, err?.statusMessage, body
       cb []
       return
     bindings = JSON.parse body.files['allkeybindings.json'].content
-    console.log 'search-all-keybindings db result', {options, err, status: res.headers.status, bindings: bindings.length}
+    # console.log 'search-all-keybindings db result', {options, err, status: res.headers.status, bindings: bindings.length}
     cb bindings

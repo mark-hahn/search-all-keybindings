@@ -1,7 +1,7 @@
 
 # lib/search-all-kb-page-view
 
-{$}     = require 'space-pen'
+$       = require 'jquery'
 {View}  = require 'atom-space-pen-views'
 subAtom = require 'sub-atom'
 moment  = require 'moment'
@@ -73,7 +73,7 @@ class SearchAllKbPageView extends View
       @noneFound.show()
       
   destroy: ->
-    console.log 'destroying SearchAllKbPageView'
+    # console.log 'destroying SearchAllKbPageView'
     if @waitTimeout then clearTimeout @waitTimeout
     @detach()
     @subs.dispose()
