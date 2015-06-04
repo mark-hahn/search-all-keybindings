@@ -1,3 +1,6 @@
+## 0.1.5 - 6/4/2015
+* more deprecations
+
 ## 0.1.4 - 5/23/2015
 * removed emmisary and deprecations
 

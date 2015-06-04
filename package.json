@@ -1,11 +1,11 @@
 {
   "name": "search-all-keybindings",
   "main": "./lib/main",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Package developer tool to search all published keybindings",
-  "activationEvents": [
-    "search-all-keybindings:open"
-  ],
+  "activationCommands": {
+    "atom-workspace": ["search-all-keybindings:open"]
+  },
   "repository": "https://github.com/mark-hahn/search-all-keybindings",
   "license": "MIT",
   "engines": {
