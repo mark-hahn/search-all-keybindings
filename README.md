@@ -1,6 +1,13 @@
 search-all-keybindings
 ======================
 
+# THIS PACKAGE IS DEPRECATED.
+
+Sorry, but the server for this is going over the github api usage limit.
+
+---
+
+search-all-keybindings
 Atom editor package developer tool to search all published keybindings
 
 ![Animated GIF](https://github.com/mark-hahn/search-all-keybindings/blob/master/screenshots/keyb.gif?raw=true)

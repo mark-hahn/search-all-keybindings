@@ -1,7 +1,7 @@
 {
   "name": "search-all-keybindings",
   "main": "./lib/main",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Package developer tool to search all published keybindings",
   "activationCommands": {
     "atom-workspace": ["search-all-keybindings:open"]
